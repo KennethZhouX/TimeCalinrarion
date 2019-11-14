@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3de522f-0347-4744-a8ed-19fff2cc6194" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Util/StringTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TimeCalibration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TimeCalibration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/CheckTimeApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Task/TimeCheckTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Util/LinuxCmdUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/CheckTimeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/CheckTimeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Common/BaseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Common/BaseCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Task/TimeCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Util/LinuxCmdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Util/LinuxCmdUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573442971731</updated>
       <workItem from="1573442974762" duration="11748000" />
-      <workItem from="1573543919442" duration="16451000" />
+      <workItem from="1573543919442" duration="18076000" />
     </task>
     <servers />
   </component>
@@ -147,12 +136,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java</url>
-          <line>91</line>
+          <line>92</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

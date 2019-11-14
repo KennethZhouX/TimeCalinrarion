@@ -15,8 +15,9 @@ import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimerTask;
 
-public class TimeCheckTask extends java.util.TimerTask{
+public class TimeCheckTask extends TimerTask {
 
     private static final Logger log = LogManager.getLogger(TimeCheckTask.class);
     private String DEFAULT_COMPUTER_USER = "ROOT";
