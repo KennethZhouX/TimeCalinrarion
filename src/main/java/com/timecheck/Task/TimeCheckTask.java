@@ -2,11 +2,12 @@ package com.timecheck.Task;
 
 import com.timecheck.Common.BaseCommand;
 import com.timecheck.Util.LinuxCmdUtil;
+import com.timecheck.Util.StringTools;
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
 import org.apache.commons.net.ntp.TimeStamp;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -20,7 +21,9 @@ public class TimeCheckTask extends java.util.TimerTask{
     private static final Logger log = LogManager.getLogger(TimeCheckTask.class);
     private String DEFAULT_COMPUTER_USER = "ROOT";
     private String SYSTEM_USER_PASSWORD = "P@ssw0rd1";
-    private String TIME_BJ_TARGET_IP = "117.187.129.208";
+//    private String TIME_BJ_TARGET_IP = "10.10.4.200";
+//    private String TIME_BJ_TARGET_IP = "117.187.129.208";
+    private String TIME_BJ_TARGET_IP = "10.254.96.101";
     private int PERMIT_TIME_IN_MINUTES = 1;
 
     @Override
@@ -66,13 +69,12 @@ public class TimeCheckTask extends java.util.TimerTask{
         SimpleDateFormat sdf = new SimpleDateFormat();// 格式化时间
         sdf.applyPattern("yyyy-MM-dd HH:mm:ss a");// a为am/pm的标记
         Date date = new Date();// 获取当前时间
-        System.out.println("现在时间：" + sdf.format(date)); // 输出已经格式化的现在时间（24小时制）
         return date;
     }
 
     public void setCurrentMachineDate(Date currentMachineDate, Date targetMachineDate, int diffMinutes) {
         SimpleDateFormat sdf = new SimpleDateFormat();// 格式化时间
-        sdf.applyPattern("yyyy-MM-dd HH:mm:ss");// a为am/pm的标记
+        sdf.applyPattern("yyyy-MM-dd HH:mm:ss");
         String command = "date -s \"" + sdf.format(targetMachineDate) +"\"";
         String syncCommand = "hwclock -w";
         log.info("当前系统时间: " +sdf.format(currentMachineDate)+ "和北京时间:" +sdf.format(targetMachineDate)+"相差:" + diffMinutes + "分钟" + "开始更新系统时间");
@@ -127,7 +129,7 @@ public class TimeCheckTask extends java.util.TimerTask{
      * @return
      */
     private boolean isRootUser() {
-        String currentUser =  LinuxCmdUtil.executeLinuxCmd(BaseCommand.WHO_AM_I);
+        String currentUser = StringTools.replaceBlank(LinuxCmdUtil.executeLinuxCmd(BaseCommand.WHO_AM_I));
         if(DEFAULT_COMPUTER_USER.equals(currentUser.toUpperCase())) {
             return true;
         }

@@ -1,10 +1,14 @@
 package com.timecheck.Util;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LinuxCmdUtil {
+    private static Logger log = LogManager.getLogger(LinuxCmdUtil.class);
     /**
      * @Author Kenneth
      * Exec single command
@@ -12,10 +16,12 @@ public class LinuxCmdUtil {
      * @return exec result
      */
     public static String executeLinuxCmd(String cmd) {
+        String[] command = new String[]{"sh", "-c", cmd};
         System.out.println("got cmd job : " + cmd);
         Runtime run = Runtime.getRuntime();
         try {
-            Process process = run.exec(cmd);
+            Process process = run.exec(command);
+            int item = process.waitFor();
             InputStream in = process.getInputStream();
             BufferedReader bs = new BufferedReader(new InputStreamReader(in));
             // System.out.println("[check] now size \n"+bs.readLine());
@@ -26,10 +32,11 @@ public class LinuxCmdUtil {
             }
             System.out.println("job result [" + out.toString() + "]");
             in.close();
-            // process.waitFor();
             process.destroy();
             return out.toString();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
         return null;

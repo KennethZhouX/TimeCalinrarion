@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TimeCalibration:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b3de522f-0347-4744-a8ed-19fff2cc6194" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Util/StringTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TimeCalibration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TimeCalibration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/TimeCalibration/all.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/TimeCalibration/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/TimeCalibration/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/TimeCalibration/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/TimeCalibration/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/TimeCalibration/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/linuxMonitor/all.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/linuxMonitor/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/linuxMonitor/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/linuxMonitor/warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/CheckTimeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TimeCalibration/CheckTimeApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/META-INF/TimeCalibration.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TimeCalibration/META-INF/TimeCalibration.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Common/BaseCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Task/TimeCheckTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Task/TimeCheckTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Util/LinuxCmdUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Util/LinuxCmdUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TimeCalibration/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckTimeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckTimeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Common/BaseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/timecheck/Common/BaseCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Task/TimeCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/timecheck/Task/TimeCheckTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Util/LinuxCmdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/timecheck/Util/LinuxCmdUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/CheckTimeApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Task/TimeCheckTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/com/timecheck/Util/LinuxCmdUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TimeCalibration/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/timecheck/CheckTimeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/CheckTimeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Common/BaseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Common/BaseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Task/TimeCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/timecheck/Util/LinuxCmdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timecheck/Util/LinuxCmdUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,20 +39,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1TSA9UWUW6Manmid755OmjI7Ahb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="/javasource/apache-log4j-2.12.1-bin/log4j-core-2.12.1.jar!/" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -70,9 +83,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CheckTimeApplication (1)">
+    <configuration name="CheckTimeApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.timecheck.CheckTimeApplication" />
+      <module name="TimeCalibration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timecheck.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckTimeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CheckTimeApplication" />
+      <option name="MAIN_CLASS_NAME" value="main.java.timecheck.CheckTimeApplication" />
       <module name="TimeCalibration" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckTimeApplication (1)" />
         <item itemvalue="Application.CheckTimeApplication" />
       </list>
     </recent_temporary>
@@ -94,7 +121,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573442971731</updated>
-      <workItem from="1573442974762" duration="9220000" />
+      <workItem from="1573442974762" duration="11748000" />
+      <workItem from="1573543919442" duration="16451000" />
     </task>
     <servers />
   </component>
@@ -106,10 +134,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/timecheck/Task/TimeCheckTask.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
