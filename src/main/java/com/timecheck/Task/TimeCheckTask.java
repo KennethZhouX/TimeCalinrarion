@@ -1,6 +1,8 @@
 package com.timecheck.Task;
 
 import com.timecheck.Common.BaseCommand;
+import com.timecheck.Model.Config;
+import com.timecheck.Util.ConfigUtil;
 import com.timecheck.Util.LinuxCmdUtil;
 import com.timecheck.Util.StringTools;
 import org.apache.commons.net.ntp.NTPUDPClient;
@@ -23,29 +25,30 @@ public class TimeCheckTask extends TimerTask {
     private String DEFAULT_COMPUTER_USER = "ROOT";
     private String SYSTEM_USER_PASSWORD = "P@ssw0rd1";
 //    private String TIME_BJ_TARGET_IP = "10.10.4.200";
-//    private String TIME_BJ_TARGET_IP = "117.187.129.208";
-    private String TIME_BJ_TARGET_IP = "10.254.96.101";
+    private String TIME_BJ_TARGET_IP = "117.187.129.208";
+//    private String TIME_BJ_TARGET_IP = "10.254.96.101";
     private int PERMIT_TIME_IN_MINUTES = 1;
 
     @Override
     public void run() {
+        Config config = ConfigUtil.getConfig();
         SimpleDateFormat sdf = new SimpleDateFormat();// 格式化时间
         sdf.applyPattern("yyyy-MM-dd HH:mm:ss");// a为am/pm的标记
-        log.info("【START】开始校验系统时间：");
+        log.info("【CHECK START】Start check system time:");
         Date currentMachineDate = getCurrentMachineDate();
-        log.info("当前系统时间: " + sdf.format(currentMachineDate));
+        log.info("Current System time: " + sdf.format(currentMachineDate));
 //        Date targetDate = getTargetDate(timeSyncConfig.getTargetIp());
-        Date targetDate = getTargetDate(TIME_BJ_TARGET_IP);
-        log.info("目标机器("+TIME_BJ_TARGET_IP+")时间：" + sdf.format(targetDate));
+        Date targetDate = getTargetDate(config.getTargetTimeMachineIp());
+        log.info("Target machine("+config.getTargetTimeMachineIp()+")time：" + sdf.format(targetDate));
         int timeDiff = getBetweenMinutes(currentMachineDate, targetDate);
-        if(timeDiff >= PERMIT_TIME_IN_MINUTES) {
+        if(timeDiff >= config.getPermitTimeInMinutes()) {
             setCurrentMachineDate(currentMachineDate, targetDate, timeDiff);
-            log.info("当前系统时间有误差，已更新至目标机器"+TIME_BJ_TARGET_IP+"时间");
+            log.info("current machine time is not correct, but updated to target machine("+config.getTargetTimeMachineIp()+")time");
         } else {
-            log.info("当前系统时间正常");
+            log.info("current machine time is error");
         }
 
-        log.info("【END】校验结束");
+        log.info("【CHECK END】Check");
     }
 
     public Date getTargetDate(String targetIp) {
